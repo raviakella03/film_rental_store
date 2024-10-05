@@ -1,0 +1,9 @@
+quarkus:
+  application:
+    name: "film_rental_store"
+  datasource:
+    username: root
+    password:
+    db-kind: mysql
+    jdbc:
+      url: jdbc:mysql://localhost:3306
