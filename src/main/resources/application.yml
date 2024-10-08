@@ -2,8 +2,19 @@ quarkus:
   application:
     name: "film_rental_store"
   datasource:
-    username: root
-    password:
+    username: quarkus_mysql
+    password: quarkus_mysql
     db-kind: mysql
     jdbc:
-      url: jdbc:mysql://localhost:3306
+      url: jdbc:mysql://localhost:3306/sakila
+  hibernate-orm:
+    log:
+      format-sql: true
+      sql: true
+      highlight-sql: true
+    database:
+      generation: none
+  devservices:
+    enabled: true
+  hibernate-validator:
+    fail-fast: true

@@ -17,6 +17,7 @@
         <skipITs>true</skipITs>
         <surefire-plugin.version>3.3.1</surefire-plugin.version>
         <org.projectlombok.lombok.version>1.18.34</org.projectlombok.lombok.version>
+        <org.hibernate.orm.hibernate-spatial.version>6.6.0.Final</org.hibernate.orm.hibernate-spatial.version>
     </properties>
 
     <dependencyManagement>
@@ -38,10 +39,6 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-hibernate-orm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-hibernate-validator</artifactId>
         </dependency>
         <dependency>
@@ -55,6 +52,11 @@
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-hibernate-orm-panache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-spatial</artifactId>
+            <version>${org.hibernate.orm.hibernate-spatial.version}</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
